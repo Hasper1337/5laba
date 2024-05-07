@@ -11,7 +11,7 @@ def pi_digits():
 digits = pi_digits()
 
 # Используем map для преобразования значений в целые числа
-digits = map(int, digits)
+digits = map("{:.2f}".format, digits)
 
 for i in range(10):
     print(next(digits))
